@@ -4,6 +4,6 @@ html, body {
   }
   
   body {
-  /*     background-position-y: 30px;     */
       background-image: url('foodbkg.jpg');
+      color: white;
   }
