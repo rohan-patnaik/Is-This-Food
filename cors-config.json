@@ -1,0 +1,19 @@
+[
+    {
+        "origin": [
+            "https://twitch-ml-deploy.vercel.app/"
+        ],
+        "responseHeader": [
+            "*"
+        ],
+        "method": [
+            "GET",
+            "POST",
+            "HEAD"
+        ],
+        "maxAgeSeconds": [
+            "3600"
+        ]
+
+    }
+]
