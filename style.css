@@ -1,0 +1,9 @@
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+  /*     background-position-y: 30px;     */
+      background-image: url('icecreambackground.jpg');
+  }
