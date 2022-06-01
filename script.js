@@ -3,10 +3,10 @@ const classes = {
     1 : "not_food"
 };
 
-const status = document.getElementById("status");
+const status1 = document.getElementById("status");
 
-if (status) {
-    status.InnerText = "Loaded Tensorflow.js version - " + tf.version.tfjs;
+if (status1) {
+    status1.InnerText = "Loaded Tensorflow.js version - " + tf.version.tfjs;
 }
 
 let model;
