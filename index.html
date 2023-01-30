@@ -5,22 +5,70 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Is this food?</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <style>
+    body {
+      background-image: url('icecreambackground.jpg');
+      background-size: cover;
+      font-family: Arial, sans-serif;
+    }
+    
+    #container {
+      width: 50%;
+      margin: 10% auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+    }
+    
+    h1 {
+      font-size: 36px;
+      margin-bottom: 30px;
+      color: #333;
+    }
+    
+    #file-input {
+      display: none;
+    }
+    
+    label {
+      cursor: pointer;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    
+    #image {
+      margin-top: 30px;
+    }
+    
+    #status, #model_status {
+      font-style: italic;
+      color: #666;
+      margin-bottom: 30px;
+    }
+    
+    #predicted_class, #predicted_prob {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 30px;
+      color: #333;
+    }
+  </style>
 </head>
 
 <body>
+  <div id="container">
     <h1>Is this food? Identify !!!!</h1>
-    <p style="background-image: url('icecreambackground.jpg');"></p>
 
     <p id="status">Awaiting TF.js load</p>
     <p>This line below will say loaded if the model loads</p>
     <p id="model_status">Awaiting TF.js model/ TFLite model loading</p>
 
-<!--     Upload Image -->
-    <p><label for="file" style="cursor; pointer;">Upload Image</label></p>
-    <p><input type="file" accept="image/*" name="image" id = "file-input"/></p>
+    <p><label for="file-input">Upload Image</label></p>
+    <p><input type="file" accept="image/*" name="image" id="file-input"/></p>
     <p><img id="image" width="200"></p>
-    
 
     <p>Predicted class :</p>
     <p id="predicted_class"></p>
@@ -29,8 +77,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-tflite@0.0.1-alpha.7/dist/tf-tflite.min.js"></script>
-    
     <script src="script.js"></script>
+  </div>
 </body>
 
 </html>
