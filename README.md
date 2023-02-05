@@ -1,4 +1,6 @@
 # is-this-food
-ML powered app to check if a photo is of a food or not
+ML powered app to check if a photo consists of any food item or not
 
-This is still a work in progress app
+GO to the link below to check it out live!
+
+thisfood.vercel.app
