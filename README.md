@@ -1,5 +1,5 @@
 # is-this-food
-ML powered app to check if a photo consists of any food item or not
+ML powered app to check if an uploaded picture contains any food item or not!
 
 GO to the link below to check it out live!
 
